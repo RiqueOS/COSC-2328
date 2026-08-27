@@ -1,0 +1,10 @@
+1. What is a web server, in your own words?
+- a point of acceses that i belive has a client sort of relationship that you can connect to. 
+2. What does Docker do for us, and how is it different from installing Node directly?
+- Im still confused on extaclty what. it feels like were creating a VM in a way because we are contaning something to access safely and that how we were able to search our output through a URL
+3.Why do web files go in a public/ folder?
+- so that we can access them easier ? im still confused why we can't actually make it private if were the only one having access ?
+4. What does localhost refer to?
+- I belive it refers to our home computer point becuase we are the one that created the folder and container from docker to open this URL link ?
+5. In docker run -p 3000:3000, what do the two numbers mean? 
+- I dont belive i know yet, but a humble guest to this question is maybe a IP address ? 
