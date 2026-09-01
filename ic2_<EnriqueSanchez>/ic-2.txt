@@ -1,0 +1,16 @@
+ic-2.txt
+
+1. In your own words, what does "push" do, and what does "pull" do?
+- when we push out code we putting it in a reposiroty like github, making sure this is public is important becuase when we "pull" were putting this code on our VM machine / container called droplet 
+
+
+2. Why did we map port 8080 to port 3000 in the docker run command?
+- because our local is always on 3000 and that is what we were doing 
+
+
+
+3. Why is it safer to run your app as a non-root user instead of as root?
+- accessing as the non-root user protectcs us from potential threats and keeps our identify secured and away from the root user 
+
+4. What does it mean that your repository is public, and why is that useful to you?
+its useful so that droplet can access our code as well as our professor and employer 
