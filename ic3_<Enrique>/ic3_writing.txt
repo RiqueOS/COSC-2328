@@ -1,0 +1,21 @@
+ic3_writing.txt
+
+1. What goes in the <head> of a page versus the <body>, and who sees each?
+- inside the head lays the meta data has other underlying things that go in there like the <title> 
+, its what search engines like google or firefox uses to find our website. The body is actually visible becuase its conatins the heading as well as text 
+
+2. What is the difference between running your page at localhost:3000 and at <your-IP>:8080?
+- when you run something on your localhost:3000 your running directliy on your computer, were doing this becauase we want 
+to confirm our page alyways works on the localhost before we send it to production.
+that is where <your-ip>:8080 comes along becuase its for proudciton use case only 
+
+3. In your own words, what does push do and what does pull do in today's loop?
+- in todays look pull met we were taking what we made on VScode and creating a local container for us to view our code 
+safely using Docker. and when it looked good enough for we pushed it into our github repository so that we can view it diffirently 
+
+
+3. Why do we test on localhost:3000 before pushing to production?
+- we do this so we can test our code localy on our personal computer, catch bugs and give a clean looking product before real users can use it like our profesors or classmates.
+
+
+
