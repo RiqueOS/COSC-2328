@@ -1,0 +1,10 @@
+1. the diffirence between a <ul> and <ol> is their purpose when you are creating your website and the type of fuction you are looking for.
+want something to organized and chronoglical order, maybe creating a recipe. use a <ol> order list that displays the numbers, but if you are looking to just create a list where order doesn't matter 
+than a <ul> is what you are looking for 
+
+2. a relative link is the right choice to choose from when the link is coming from your own local server, 
+beucase you then use the special commands " ../ " to help reference that folder, unlike when using a absoulute URL where you just attach a online link from internet inside it to direct it towards there
+
+3. the alt is important when it comes to pictures, becuase its what give the discription towards what you are linking or attaching after using a src attribute.
+
+4. a relative path means the image or link you are attaching torwards you src or href comes from your local serve inside your laptop
