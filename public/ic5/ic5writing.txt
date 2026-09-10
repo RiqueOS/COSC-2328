@@ -1,0 +1,13 @@
+1. what does an external stylesheet do, and why is keeping CSS in its own file better than putting styles inside the HTML?
+- an external style keeps a layout of our style we are created towards our linked html file. the reason this practice is useful like he mentioned in 
+class was you are able to make changes to the entire website with a single update without having to look around and find many other files before doing a small change
+
+2. In a CSS rule, what is the selector and what is the declaration (property: value;)? Give one example from your file.
+- a selector is a type of tool that helps target specifically what we want to give deatil to inside our HTML page like the body, header, photos etc. a declaration is what defines that style for example " font-family: Georgia, serif;
+
+3. What is the difference between a class selector (.card) and an id selector (#intro), and when would you use each?
+- you use class if you are creating a specific style that will be used more than once, and a id selctor is used for just element you are styling, should only appear once in your page
+
+
+4. Both the <link> (css/ic5.css) and the <img> (images/photo.jpg) use relative paths. What does each one point to, relative to where ic5.html lives?
+- each one of these just point back to our local desktop

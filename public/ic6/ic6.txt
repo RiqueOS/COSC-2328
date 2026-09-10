@@ -1,0 +1,8 @@
+1. Name the four layers of the box model from the inside out. Which two add to the total size of the element?
+the 4 layers of the box model, are the content, padding, border and laslty margin. and when you start to update the padding and margin you start to change the size of the element 
+
+
+2. What does margin: 16px auto do, and why does it center the box?
+
+3. What is a CSS variable, where do you define it, and how do you use it? Give one example from your file.
+4. What does the selector .box h2 match, and how is it different from h2 by itself?
