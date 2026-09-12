@@ -1,0 +1,41 @@
+/* HW3 */
+
+body{
+font-family: sans-serif;
+background-color: #f5ebe0;
+color: #1c2541;
+margin: 0;
+padding: 16px;
+}
+
+:root{
+    --pop-red: #a41623;
+    --pop-green: #386641;
+    --space: 16px;
+    --radius: 8px;
+    
+}
+
+#name {
+    color: var(--pop-red);
+    text-align: center;
+    font-size: 64px;
+}
+
+.subhead{
+    color: var(--pop-green);
+    text-align: center;
+}
+
+.image-wrapper{
+    width:auto;
+    padding: auto;
+    border:3px solid var(--pop-red);
+    margin: auto;
+    border-radius: var(--radius);
+}
+
+.link:hover {
+    color: #c0392b;
+    text-decoration: none;
+}
