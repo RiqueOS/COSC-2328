@@ -1,0 +1,16 @@
+1. What is the difference between <th> and <td>, and who benefits from using <th> correctly?
+- the difference between th and td just has to do with what you are looking for when building your table. 
+as the <th> you are targeting the header cell, making them bold and centerd. you use the <td> if they are you normal
+ cells just filling in you rbasic data 
+
+2. What do <thead>, <tbody>, and <tfoot> organize, and why split a table into them?
+- the purpose of these elments is specifcally what its targeting from the header. when you split a table into these indivual part you get a lot of diffirent customazation styles 
+
+
+3. What does colspan="4" do? When would you use rowspan instead?
+- the puspose of colspan = "4" gives the size to what ever you are applying the 
+length of what a normal size cell is given by default, and so when you specifcally write a number you are given it the length of 4 normal cells like we did for our header 
+
+
+4. What does border-collapse: collapse change about the table's appearance?
+- this just mergers other borders next to it into a single shared boarder line, removing weird gaps
