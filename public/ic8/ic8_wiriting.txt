@@ -1,0 +1,14 @@
+1.How does the for/id pair improve a form, and who benefits?
+- this improves the form my adding visbility to it, as now it is clear to the user what box they are currenlty on or need to be 
+
+
+2.What does type="email" give you for free, compared to type="text"?
+- type = "email" gives us for free a way to valiadte the user input matches the synatx that a common email should include like @gmail or @yahoo etc, rejecting anyting else that is not that
+compared to type "text" where it is just making sure the user input are letters and nothing more 
+
+3.What is the difference between method="post" and method="get"?
+method = "post" sends data to the server, and method = "get" is requesting the data and puts it in the URL
+
+
+4.Why is built-in HTML validation (required, pattern) useful even though a determined user could bypass it?
+- it really is just to make our websites more user frendily and accesibiltuy for anyone that maybe is not tech savy or accidently input wrong information
