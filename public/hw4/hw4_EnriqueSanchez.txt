@@ -1,0 +1,4 @@
+Name: Enrique Sanchez
+SEU username: Enrique Sanchez
+Droplet URL: http://<YOUR-DROPLET-IP>:8080/hw4/hw4.html
+GitHub repo: https://github.com/<your-github-username>/cosc2328

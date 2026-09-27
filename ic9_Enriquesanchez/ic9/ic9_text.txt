@@ -1,0 +1,14 @@
+1. Why does .card need position: relative for the badge to land in its corner?
+the reason you need the two, is becuase they work together creating the badge and letting it position inside it 
+and in our example we took the badge from its normal flow and pin it to the header top-right
+
+2. What does z-index control, and when do you need it?
+z-index has to do with the card header we created, which helps allow it to sit above the header 
+
+3. What does "mobile-first" mean, and how do the two media queries build on the base styles?
+the mobile first strucutre we did happened at the beggning becuase we wrote the layout that helps the phone display our html page 
+when we did that each media querie we add adds columns as the screen gets wider, we have things in place where if that were to exceed the min widith we would shrink the layout 
+
+4.What does object-fit: cover do to an image, and why pair it with max-width: 100%?
+this just simply ensure that any object we add does get distorted if we were to move this page to our phone which can really change the way images look 
+which is the reason why we pair it with max-width:100% to safe gaurd from the image turning bigger 
