@@ -1,0 +1,77 @@
+<!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: Enrique Sanchez -->
+
+<!--5.1 File structure-->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/hw4.css">
+</head>
+<body>
+    <header>
+        <h1>FutureWeb 2026</h1>
+        <p>Tagline</p>
+    </header>
+    <main class = "container">
+    <!-- 5.6 sidebar content -->
+    <div class = "event-info">
+        <h2>Event Details</h2>
+        <ul>
+            <li>Event location: Downtown Austin</li>
+            <li>Event Data: October 15, 2026</li>
+            <li>Guest Speaker: Michael Scott</li>
+        </ul>
+    <img src="images/MichaelScott.png" alt="Guest Speaker, Michael Scott" width="200">
+    </div>
+     <!-- the form area-->
+    <div class = "registration-form">
+    <!--5.4 Attendee form-->
+    <form action="https://httpbin.org/post" method="post">
+
+        <fieldset>
+            <legend> Attendee Details</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+
+            <label for="arrival-date">Date of Arrival</label>
+            <input type="date" id="arrival-date" name="arrival-date" >
+        </fieldset>
+
+        <!--5.6: session Preferences-->
+
+            <fieldset>
+
+
+                <legend>Session Preferences</legend>
+
+                <label for="track" >Track Selection</label>
+                <select id = "track" name = "track" >
+                    <optgroup label = "Frontend">
+                        <option value = "react">React</option>
+                        <option value = "vue">Vue</option>
+                        <option value = "css">CSS</option>
+                    </optgroup>
+                    <optgroup label = "Backend">
+                        <option value = "nodejs">Node.js</option>
+                        <option value = "python">Python</option>
+                        <option value = "java">Java</option>
+                    </optgroup>
+                </select>
+
+                <label for="resume" >Upload Resume/Portfolio</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.docx">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </main>
+
+    </body>
+    </html>
