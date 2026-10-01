@@ -1,0 +1,15 @@
+1.What does defer do, and why link the script in the <head> with it?
+the defer on the script tag simply just tells the browswer to load JS but 
+run it only after the HTML has been parsed by the browswer. The reason we link the script inside the header is becuase its a file we are connecting on our html page to be used on 
+
+2. What is the difference between const and let? Give one use for each.
+a const is the type of varibale you want to use if that variable will never changed nor be updated again, for example
+maybe some type of boolean statment that that must remain false 
+and "let" is used for values that may change or be updated for example after a method you might want to updated a value if it changes
+
+3.What does "truthy/falsy" mean? Name two values that are falsy.
+in simple terms truthy just means true and falsy just means false, two examples of flasy are a empty string "", or 0 are considerd as falsy
+
+4.In your combined-logic step, what do &&, ||, and ! each do?
+&& means both arguments must be true in order to get what you expected, || mean only one part of your argument must be true
+and then ! negates or gets the oppsite of what you are expecting 
