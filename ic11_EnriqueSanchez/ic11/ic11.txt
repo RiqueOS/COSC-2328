@@ -1,0 +1,20 @@
+1.Give one difference between a function declaration and a function expression.
+
+a function declaration is typical to what you see when you want to pass a parameter and have that do something in response,
+and a function expression is when you create a const that hold a function inside its variable and can return something as well
+
+
+2.When can an arrow function skip the return keyword (implicit return)?
+
+you can choose to skip using a return keyword if you are not doing a tradational function declaration, and instead go in the route 
+using a function expression, where that arrow key word can be used to skip that implict return
+
+3.What does the rest operator (...) let a function do?
+
+this operator allows you to input the type of argument you are wanting to take in, that can be string, numbers, float etc and take it in,
+ and can just be more than one input inside of it
+
+
+4.In an object method, what does this refer to?
+a object method refers back to in java what is known as object orientied design where classes and methods are important to assigning what
+ you want your object to be 
