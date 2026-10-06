@@ -1,0 +1,16 @@
+1. What's the difference between getElementById and querySelector? When would you reach for each one?
+getElementbyID is used if you want the fastest and most direct way to grab one specific element when you the element ID. 
+QuerySelector is used if you want any CSS selecotr to accept it, and return the the first match it makes in its selector
+
+2. What does querySelectorAll return, and why do you need forEach (or a loop) to do something with every item in it?
+This returns a collection of element that it has, and when you run the javascript function 'forEach' it applies that css style on every item in it.
+
+
+3. Name the three classList methods you used today and what each one does.
+we used classList.toggle where this flips a class on if its missing and off its presenet already, and in our example we used it to hide one of our display cards.
+we then used a classList.remove which simply deletes a class complelty, so we applied this on "card" where it deleted the base stylying that class provided, making that card visually fall apart
+lastly we used a classList.add which is how a javaScrip flips on its visual state that is already defined by CSS state, then instead writing inline styles from our CSS file
+
+4. Why is textContent considered safer than innerHTML for content you didn't write yourself?
+textContent is considered more safer than innerHTML becuase it always treats whatever you give it as plain text, even though it looks like a tag, instead of it being parsed as HTML that can mainuplated
+like innerHTML where this would actually render as markup, which can be dangerous if this came from our client / user.
