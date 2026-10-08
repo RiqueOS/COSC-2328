@@ -1,0 +1,52 @@
+<!-- HW6 – COSC 2328 – Professor McCurry
+     Implemented by: Enrique Sanchez -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6 - Interactive Product Calculator</title>
+    <link rel="stylesheet" href="css/hw6.css">
+    <script defer src="js/hw6-script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Product Order Calculator</h1>
+    </header>
+
+        <main class="container">
+            <form id="orderForm">
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <label for="product">Product detail</label>
+                    <select id="product" name="product">
+                        <option value="laptop">Laptop</option>
+                        <option value="tablet">Tabelt</option>
+                        <option value="phone">Phone</option>
+                        <option value="monitor">Monitor</option>
+                    </select>
+                    
+
+                    <label for="quantity">Producut Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+                    <label for="address">Shipping address</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="discount">Discount code (optional)</label>
+                    <input type="text" id="discountCode" name="discountCode">
+
+                </fieldset>
+                <button type="sumbit">Calculate Total</button>
+            </form>
+            <div id="results" class="results-hidden"></div>
+            <noscript><p>Enable JavaScript to view this content.</p></noscript>
+        </main>
+    <footer class="site-footer">
+        <p>Enrique Sanchez COSC-2328 Web devlopment</p>
+    </footer>
+</body>
+</html>
+
+<!--6.1 File Structure,header,semantic wiring & form skeleton -->
