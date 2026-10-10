@@ -1,0 +1,25 @@
+1. What is event delegation, and why attach the click listener to the gallery container instead of to each card?
+Event delegation is the standard pattern whenever you have a group of similar clickable items on your event page
+and the reason why we attaach a click listener to the container is so we can find which card was actually clicked, this simplifes things for us from attaching listener to every card
+
+
+2. What does the dataset property let you do, and how does data-product-name become accessible in JavaScript?
+the dataset propeiry allows us to describe details about the product we are creating, and if that card is found its going to
+ read every dataset we call it to read and store that information as the const that we made it to be
+
+3. What does event.preventDefault() do in the submit handler, and what would happen without it?
+the handelr .preventDefault() allows what is in charager of what is being "sumbitmed" mean to the broswer, giving our form a level of validation to ensure 
+information is either not empty or filled in correctly. if this was not in place, this simpley let the client send in empty information to us.
+
+
+4. Why does the promo-code feedback use keyup instead of, say, a click event?
+the reason we use keyup is becuase its a way to give user feedback and a place to foucs on while they are currenlty typing
+updating on real time to ensure the user knows they are either doing something correctly or incorrectly
+
+
+5.The promo code changes the total, which is displayed by a completely different piece of code (the display-update function)
+ than the one that reads the promo input (the keyup handler). What connects those two, and why does that connection make the discount feature easier to add than if each handler updated the page directly?
+
+the connection between the two makes it easy to connect becuase we are updating in real time weather the pro code inputted is valid or not
+
+
