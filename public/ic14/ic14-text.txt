@@ -1,0 +1,22 @@
+1.What's the difference between the Product instances you built today and the plain object literals you used in earlier ICs? Why does that matter once you need many similar objects?
+
+this method of doing it is going to save better on memory, as well as allow us to reuse this object. this matters becuase again for memory efficient and data consistency amoung on all your objects
+
+2.Why is a method defined on Product.prototype more memory-efficient than a method defined inside the constructor function itself?
+
+its more efficient becuase a single function object is stored in meory and shared amoung all new instance being made.
+where a method defined inside the constructor creates a new copy of the function in memory for every insance you create
+
+
+3.In the instructor's class demo, what changed about how new Product(...) is called, compared to your Step 5 function-based version? What does your answer tell you about what a class actually is, underneath the syntax?
+what this tells us about the class like it described in todays notes is that its "Syntactic sugar" over the constructor-and-prototype mechanism
+
+
+4.What does super() do inside PremiumProduct's constructor, and what would go wrong if it were called after the line that sets this.warrantyYears instead of before?
+the super() key word calls the parent class constuctor with the arguments you pass this sets the parametes that we have in it already on the new object.
+what goes wrong if it goes after this.warrantyYears, java script will just throw a error until super() reutnrs
+
+5.Walk through exactly what happens, in order, when you click "Sort by Price": which array method runs, what does the compare function you wrote actually compare, and what does it hand back to your render function?
+what happens step by step is first, as you soon as you make the click, the listener attached to it runs a anonymous function we passed using "addEventListtener". then second [...catalog] makes a copy, it builds a new array holding the same six producuts object.
+next .sort(...) runs the compare function on pairs of products where sort is the array method doing the work. then sort returns the sorted copy which gets stored into "stored.
+Lastly renderProducuts(sorted) receives that array, which is the array of products objects in ascending price order.
