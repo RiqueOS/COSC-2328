@@ -1,0 +1,28 @@
+1.What does fetch() actually return immediately, and why isn't that your data? What is a Promise a placeholder for?
+what the fetch() ends up returning is what is known as a "Promise" object represetnign a ongoing, aynchronous operation 
+the reason why this isnt our data is becuase when we send that request to the API it takes time to travel to it and back to us, so instead of freezing and waiting for that response it gives us that Promise
+and in general the promise is placeholder for a future hold that we will receive from the API when it is finish 
+
+
+2.What does the await keyword do, and why can it only be used inside a function marked async?
+
+the await keyword pauses the execution of a aynchronous funciton until a Promise status settles and resume its normal regualr execution to give back its resulting value from the API server
+the reason why an await can only be used inside a async function becuase that is where the whole process is happening where we can see the status of our promise, so that it can safely pause or resume execution depending on that status 
+
+3.fetch()'s Promise resolved successfully for a misspelled Pokémon name — it didn't reject. So why did the page show a "not found" message instead of crashing? What check made that possible? Why is this exact mistake one you're likely to see again in a real job?
+the reason why our page doesnt crash when a misspleled name happens is becuase fetch only reject a promise if their is network failrue or if that request to the API is blocked.
+what makes this possible is this specific line from our code 
+
+ if (!reponse.ok){
+            throw new Error("pokemon not found. Check the spelling and try again");
+        }
+
+basically a try and catch type of situation where it checks the reponse.ok propety before parsing the data
+
+
+4.Why do you need two awaits in your search function — one for fetch(...) and one for response.json()? What is each one waiting on?
+the first awit is waiting on the API to return what fetch() gives back which is usally that URL link and the other is the user response on what pokemon it is 
+
+
+
+5.Where did map() show up in this IC, and how is what it did here similar to how you used it (or forEach()) on the array of products in IC14?
