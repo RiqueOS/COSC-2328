@@ -1,0 +1,26 @@
+1.What is JSX, and why doesn't the browser understand it directly? What job does Babel do for it?
+JSX is a syntax extension for javaScript that lets you write HTML-like markup direcelty inside our JS code
+the reason why our browswer chooses to not understand direclty becuase JSX isnt valid javascript. the purpose of Babel is its a complier that translates JSX into plain
+JavaScript that the broswe can run
+
+
+2.Why does a component returned from JSX need a single root element, and why do we write className instead of class?
+a component returned form JSX need a single root element becuase a function can only reutnr one value, since Babel turns JSX into a React.CreateELement()
+the reason why a className instead of class is becuase JSX is javascript and class is a reserved keyword for javascript purposes
+
+
+3.What is a "prop," and how did it let your one CharacterCard function represent four different characters instead of needing four separate functions?
+
+a Prop is short for "propperty" is a value you pass into a component from its parent, its the same way you pass arugments into a function.
+its why its our CharacterCard function represent as four different characters, becuase reat gather what we pass into our function which receives it as a parameter
+
+
+4.Why does React require a unique key when rendering a list with map()? What shows up in the console if you forget it?
+the reason why react needs a key is because data changes, and react compares the new list against the previous one to figure out what smallet set of updates occurerd to the DOM.
+what ends up showing up on the console if you forget the key is that react logs a warnings to us 
+
+
+
+5The lecture mentioned that class components also exist in React. Why did today's IC build only functional components?
+the reason why in todays IC only built functional components is becuase no where in our function needed a class componenet, they are only requeired and recommend for state and lifecycle methods 
+the header, CharacterCard and CharacterList only take props and return JSX, so a functional component does the whole job with less code
