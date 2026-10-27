@@ -1,0 +1,4 @@
+Name: <Your Full Name>
+SEU username: <yourSEUusername>
+Droplet URL: http://<YOUR-DROPLET-IP>:8080/hw7/hw7.html
+GitHub repo: https://github.com/<your-github-username>/cosc2328
