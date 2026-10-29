@@ -1,0 +1,89 @@
+/* IC17 – COSC 2328 – Professor McCurry
+   Implemented by: Enrique Sanchez */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+}
+
+.pet-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.pet-card h1 {
+  color: #667eea;
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+
+.stats {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.stat {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.mood {
+  font-size: 2.5rem;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #667eea;
+  color: #fff;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.warning {
+  color: #c0392b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+

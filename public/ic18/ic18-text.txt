@@ -1,0 +1,27 @@
+1.What is prop-drilling? Describe a situation where it would be a problem without the Context API.
+prop-drilling is when you pass data through several layers of components as props, even though the components in the middle dont use it
+a situation where this could be a problem from our IC18 if mode and toggleMode had to pass through every layer between App and ModeToggle
+becuase each layer gets extra props and any changes means editing all of them
+
+2.What are the three things you need to use the Context API? (Create, Provide, Consume — describe each one.)
+Create is where you make the context object with Reac.createContext(), this is the channle that shared data will travel through. 
+It’s created once, outside any component, so every component in the file can reference it.
+
+the provide step is where you wrap the part of the component tree that needs the data in <HabitatContext.Provider> and pass the shared data through its value prop
+
+the consume step is component that needs the data calls the useContext hook with the context object and gets back whatever the Provider put in value
+
+
+
+3.In this exercise, ModeToggle changes mode state that lives in App, but App never passed toggleMode as a prop. How does ModeToggle get access to it?
+ModeToggle gets toggleMode by calling React.useContext(HabitatContext). App puts toggleMode in the Provider’s value, and since ModeToggle is rendered 
+inside that Provider, React gives it that value directly. Calling toggleMode updates the mode state in App, which re-renders all the consumers.
+
+
+4.Where in the file must React.createContext() be called, and why does placement matter?
+React.createContext() must be called at the top level of the file, outside of and above every component.
+the reason why placement is so important in this case is so that way every  component can access the same context object
+and it isnt recreated on each render
+
+5.What would you have to change if you added a fifth component that also needed to read mode?
+would end up changing if we added a fifth component that also needed read mode, would be nothing. 

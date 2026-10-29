@@ -1,0 +1,19 @@
+1.What does useState return? Name both things and describe what each one does.
+the useState returns and array with extaclty two elements. 
+it first returns the current state value as well as the setter function we created called setHunger and SetEnergy
+
+
+2.Why do you write onClick={feedPet} instead of onClick={feedPet()}?
+the reason we write a onClick={feedPet} instead of the other with () inside of it is beucase the first one passes a reference to the function 
+and react stores it and calls it when the button is clicked, while the other version calls the function immediately while the component is still renendeing
+
+
+3.After you click Feed, what causes the Hunger number on the screen to update?
+what cause the hunger number to update is the "SetHunger" function we created
+
+
+4.Trace through getPetMood() with hunger = 40 and energy = 80. Which condition matches first? What does the function return?
+it first check if humger is > 75 and that is false so it skips, laslty it checks if hunger is less than 30 and energy is greater 70 which is true so it return "thriving"
+
+
+5.What is the difference between {hunger > 80 && <p>...</p>} and putting the same logic inside getPetMood()? When is each approach the right choice?
