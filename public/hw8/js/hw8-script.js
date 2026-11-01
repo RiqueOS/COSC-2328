@@ -1,3 +1,8 @@
+// HW7 – COSC 2328 – Professor McCurry
+   //  Implemented by: Enrique Sanchez 
+
+
+
 function App(){
     //8.8 requried state variables
     const [tasks, setTasks] = React.useState([]);
