@@ -5,7 +5,7 @@ const express = require('express');
 const router  = express.Router();
 
 let cases  = [];   // in-memory case log — resets on server restart
-let nextID = 1;
+let nextId = 1;
 
 module.exports = router;
 
@@ -28,7 +28,7 @@ router.post('/cases', (req, res) => {
     const{suspect, location, notes} = req.body;
 
     if(!suspect || !location){
-        return res.status(400).json({error: 'suspect and location requried'});
+        return res.status(400).json({error: 'suspect and location required'});
     }
 
     const newCase = {
