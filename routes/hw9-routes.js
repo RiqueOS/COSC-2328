@@ -12,9 +12,9 @@ module.exports = router;
 // GET /hw9/credentials — return detective clearance from .env
 router.get('/credentials', (req, res) => {
   res.json({
-    license: process.env.license,
-    station: process.env.station,
-    alert: process.env.alert
+    license: process.env.PI_LICENSE,
+    station: process.env.STATION_NAME,
+    alert: process.env.ALERT_LEVEL
 
   });
 });
