@@ -1,0 +1,17 @@
+1.What does express.json() do, and what would happen to req.body in your POST route without it?
+
+
+
+
+
+2.What is the difference between HTTP status 200 and 201? When would you use each?
+
+
+
+
+
+3.Your seed missions disappear every time the Docker container restarts. What would you need to add to make them persist?
+
+
+
+4.If two people in different browser tabs both added missions at the same time, would they both see the same list? Why or why not?
