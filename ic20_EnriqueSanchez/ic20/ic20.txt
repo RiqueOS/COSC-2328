@@ -1,0 +1,23 @@
+1.What does express.json() do, and what would happen to req.body in your POST route without it?
+express.json() is build in middle ware that reads the raw body of incoming request with a "content-Type: application/json" header, parses the JSON text
+into a javaScript object, and attaches it to req.body
+
+
+
+
+2.What is the difference between HTTP status 200 and 201? When would you use each?
+HTTP status 200 means the request succeeded and the response carries the result. 
+201 means that the request succeeded and a new resource was created as a result.
+you typically use 200 for request that read or change things without creating anything new and then you use 201 when a POST 
+creates a new resource
+
+
+
+
+3.Your seed missions disappear every time the Docker container restarts. What would you need to add to make them persist?
+you would need storage that lives outside the Node process, and a Docker volumne so that storage outlives the container, another you may need is nextID in sync.
+
+
+4.If two people in different browser tabs both added missions at the same time, would they both see the same list? Why or why not?
+yes, they share the same list but each tab only sees the other changes the next time it fecthes. the reason behind this is becuase the 'missions' array lives in the 
+Node server memory, not in the broswer. Every tab sends its request to the same server process. so they all read and write the same array
