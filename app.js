@@ -1,6 +1,6 @@
 // IC1 – COSC 2328 – Professor McCurry
 // Implemented by: [Enrique Sanchez]
-
+console.log('A: top of app.js'); 
 require('dotenv').config();                              // NEW — IC19: read .env and load values into process.env
 const PORT = process.env.PORT || 3000;                  // NEW — IC19: use PORT from .env, fall back to 3000
 
@@ -26,15 +26,21 @@ app.get('/ic19/config', (req, res) => {                  // NEW — IC19: GET ro
   });
 });
 
+console.log('B: before mounts');   
 // IC20 route mount
 app.use(express.json()); // this parses the JSON request body
 
 app.use("/ic20", require("./routes/ic20-routes"));
+
+// IC22 route mount
+app.use("/ic22", require("./routes/ic22-routes"));
 //HW9 here
+
+
 app.use('/hw9', require('./routes/hw9-routes'));  // NEW — HW9: mount hw9 router
 
 
-
+console.log('C: before listen'); 
 app.listen(PORT, "0.0.0.0", () =>                        // 0.0.0.0 makes the server reachable from the droplet (IC2)
   console.log(`Running on http://localhost:${PORT}`)
 );
