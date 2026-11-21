@@ -29,15 +29,22 @@ app.get('/ic19/config', (req, res) => {                  // NEW — IC19: GET ro
 console.log('B: before mounts');   
 // IC20 route mount
 app.use(express.json()); // this parses the JSON request body
+app.use(express.urlencoded({ extended: true }));
+
 
 app.use("/ic20", require("./routes/ic20-routes"));
 
 // IC22 route mount
 app.use("/ic22", require("./routes/ic22-routes"));
 //HW9 here
-
-
 app.use('/hw9', require('./routes/hw9-routes'));  // NEW — HW9: mount hw9 router
+
+
+app.use('/hw10', require('./routes/hw10-routes'));  // NEW — HW10: mount hw10 router
+
+
+//IC23 route mount 
+app.use("/ic23", require("./routes/ic23-routes"));
 
 
 console.log('C: before listen'); 
